@@ -1,5 +1,8 @@
 #!/usr/bin/python3
-"""A function that returns list of integers containing pascal's triangle of `n`"""
+"""A function that returns list of integers
+containing pascal's triangle of `n`"""
+
+
 def pascal_triangle(n):
     """
     Generates Pascal's Triangle up to the specified number of rows.
@@ -13,7 +16,7 @@ def pascal_triangle(n):
     if n <= 0:
         return []  # Return an empty list for invalid input.
 
-    triangle = [[1]]  # Initialize Pascal's Triangle with the first row, which contains a single 1.
+    triangle = [[1]]  # Initialize Pascal's Triangle with the first row
 
     for i in range(1, n):
         prev_row = triangle[i - 1]  # Get the previous row in the triangle.

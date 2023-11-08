@@ -15,7 +15,7 @@ request(url, function (error, response, body) {
   }
 });
 
-function printCharacters(characters, i) {
+function printCharacters (characters, i) {
   request(characters[i], function (error, response, body) {
     if (error) {
       console.error('error:', error);
@@ -27,4 +27,3 @@ function printCharacters(characters, i) {
     }
   });
 }
-

@@ -30,13 +30,15 @@ def makeChange(coins, total):
         if total == 0:
             return num_coins
 
-        # Calculate how many of the current coin are needed to meet the total (or as close as possible without going over)
+        # Calculate how many of the current coin are needed to meet the total
+        # (or as close as possible without going over)
         num_coins += total // coin
 
         # Reduce the total by the value of the coins used
         total %= coin
 
-    # If total is not 0, it means the total cannot be met by any number of coins you have, so return -1
+    # If total is not 0, it means the total cannot be met by any
+    # number of coins you have, so return -1
     if total != 0:
         return -1
 
